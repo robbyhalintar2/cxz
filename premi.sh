@@ -1,4 +1,18 @@
 #!/bin/bash
+
+# ==============================================================================
+# DISCLAIMER:
+# This script is provided for educational and informational purposes only.
+# Running shell scripts from unknown sources can pose significant security risks
+# to your system. Always review the content of any script thoroughly before
+# executing it on your server.
+#
+# This script attempts to install various VPN components and dynamically fetches
+# the latest available version of Xray-core from its official GitHub repository.
+# "Version Latest 2025" is not a standard release for this script type;
+# functionality is based on the components it installs.
+# ==============================================================================
+
 Green="\e[92;1m"
 RED="\033[31m"
 YELLOW="\033[33m"
@@ -962,7 +976,7 @@ clear
     base_package
     make_folder_xray
     pasang_domain
-    password_default
+    # Removed call to undefined function 'password_default'
     pasang_ssl
     install_xray
     ssh
